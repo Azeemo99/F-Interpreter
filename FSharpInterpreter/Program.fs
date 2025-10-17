@@ -1,2 +1,14 @@
-﻿// For more information see https://aka.ms/fsharp-console-apps
-printfn "Hello from F#"
+﻿namespace FSharpInterpreter
+
+open System
+open System.Windows
+
+[<EntryPoint>]
+let main argv =
+    // Create the application
+    let app = App()
+    
+    // Show the main window
+    let mainWindow = MainWindow()
+    app.Run(mainWindow)
+
